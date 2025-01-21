@@ -27,6 +27,19 @@ const Navbar = ({navOpen}) => {
 
     useEffect(initActiveBox,[]);
 
+    window.addEventListener('resize', initActiveBox);
+
+    const activeCurrentLink = (event) => {
+      lastActiveLink.current?.classList.remove('active');
+      event.target.classList.add('active');
+      lastActiveLink.current = event.target;
+
+      activeBox.current.style.top = event.target.offsetTop + 'px';
+      activeBox.current.style.left = event.target.offsetLeft + 'px';
+      activeBox.current.style.width = event.target.offsetWidth + 'px';
+      activeBox.current.style.height = event.target.offsetHeight + 'px';
+    }
+
     const navItems = [
         {
           label: 'Home',
@@ -65,7 +78,7 @@ const Navbar = ({navOpen}) => {
             key={key}
             ref={ref}
             className={className}
-            onClick={null}
+            onClick={activeCurrentLink}
             >
                 {label}
             </a>
