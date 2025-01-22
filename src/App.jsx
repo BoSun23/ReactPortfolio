@@ -1,5 +1,5 @@
 /**
- * @copyright 2024 Bo Sun
+ * @copyright 2025 Bo Sun
  * @license Apache-2.0
  */
 
@@ -9,12 +9,18 @@
  */
 
 import Header from "./components/Header";
+import Hero from "./components/Hero";
 
 
 
 const App = () => {
     return (
+        <>
         <Header />
+        <main>
+            <Hero />
+        </main>
+        </>
     );
   };
   
