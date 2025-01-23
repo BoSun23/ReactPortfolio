@@ -3,6 +3,13 @@
  * @license Apache-2.0
  */
 
+/**
+ * 
+ * Components
+ */
+
+import SkillCard from "./SkillCard";
+
 const skillItem = [
   {
     imgSrc: "/images/figma.svg",
@@ -58,7 +65,12 @@ const Skill = () => {
         <div className="">
             {
                 skillItem.map(({ imgSrc, label, desc}, key) =>(
-                    'SkillCard'
+                    <SkillCard
+                    key={key} 
+                    imgSrc={imgSrc}
+                    label={label}
+                    desc={desc}                   
+                    />
                 ))
             }
         </div>
