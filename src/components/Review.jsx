@@ -8,6 +8,7 @@
  * Components
  */
 
+import ReviewCard from "./ReviewCard";
 
 const reviews = [
     {
@@ -61,7 +62,9 @@ const Review = () => {
                 What our customers say
             </h2>
             <div className="div">
-                {reviews.map(({ content, name, imgSrc, company},key)=>('ReviewCard'))}
+                {reviews.map(({ content, name, imgSrc, company},
+                  key)=>
+                  (<ReviewCard />))}
             </div>
         </dev>
     </section>
