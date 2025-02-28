@@ -18,7 +18,7 @@ const Hero = () => {
       items-center lg:gap-10">
         <div className="hidden lg:block">
           <figure className="w-full max-w-[512px] ml-auto
-          bg-gradient-to-t from-sky-400 via-65% via-sky-40 to-65% 
+          bg-gradient-to-t from-[#62929e] via-100% via-[#D9EAFD] to-100% 
           rounded-[30px] overflow-hidden">
             <img 
             src="/images/hero-banner-cropped copy.png"
