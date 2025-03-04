@@ -12,7 +12,7 @@ import { ButtonPrimary, ButtonOutline } from "./Button"
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-28 lg:pt-36 bg-gradient-to-b from-zinc-900 via-gray-800 to-black">
+    <section id="home" className="section">
 
       <div className="container lg:grid lg:grid-cols-2
       items-center lg:gap-10">
